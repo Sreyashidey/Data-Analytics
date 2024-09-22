@@ -15,9 +15,7 @@ Pages_to_scrape=20
 # Loop through the pages to scrape the data
 for page in range(1,Pages_to_scrape+1):
 
-    headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-    }
+    
     url = "https://www.flipkart.com/search?q=mobile&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_2_na_na_ps&as-pos=1&as-type=RECENT&suggestionId=mobile%7CMobiles&requestId=a11a2e2c-9447-4d04-9992-282fd51dc33b&as-searchtext=mo&page=" + str(page)
     
     # Send a request to the URL to get the page's content.
